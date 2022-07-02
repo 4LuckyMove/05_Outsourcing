@@ -1,0 +1,48 @@
+// Why Us
+.why-us {
+    position: relative;
+    .crisper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .section-img {
+        background-color: #F0F0F0;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .why-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .crisper {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .section-body {
+                max-width: 737px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .why-us {
+        .crisper {
+            padding-top: 109px;
+            padding-bottom: 109px;
+        }
+    }
+}
+@media (min-width: 1596px) {
+    .why-us {
+        .crisper {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

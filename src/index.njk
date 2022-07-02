@@ -1,0 +1,24 @@
+{% extends "./html/base.njk" %}
+
+{% block title %}-LO-GO-{% endblock title %}
+
+{% block styles %}
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="@img/favicon/favicon.png" type="image/x-icon">
+{% endblock styles %}
+
+{% block content %}
+    {% include "./html/page-blocks/home.njk" %}
+    {% include "./html/page-blocks/who-we-are.njk" %}
+    {% include "./html/page-blocks/why-us.njk" %}
+    {% include "./html/page-blocks/solutions.njk" %}
+    {% include "./html/page-blocks/benefits.njk" %}
+    {% include "./html/page-blocks/our-team.njk" %}
+    {% include "./html/page-blocks/case-studies.njk" %}
+    {% include "./html/page-blocks/certifications.njk" %}
+    {% include "./html/page-blocks/insights.njk" %}
+    {% include "./html/page-blocks/contact-us.njk" %}
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}

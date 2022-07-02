@@ -1,0 +1,171 @@
+@import "fonts.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import "../../node_modules/swiper/**/**.scss";
+
+
+// Main Color
+$color-white: #FFF;
+$color-black:#000;
+$color-blue: #5CA7FF;
+$color-dark-blue: #0A175C;
+$color-gray: #C4C4C4;
+$color-light-gray: #E7E7E7;
+$color-violet: #B589E0;
+$color-dark-white: #ECECEC;
+$color-yellow: #FFDD65;
+$color-light-yellow: #FFE074;
+$color-red: #FF5C5C;
+$color-turquoise: #89E0D1;
+
+
+// Main Font
+$ff-mont-heavy: 'Mont-Heavy', sans-serif;
+$ff-mont-bold: 'Mont-Bold', sans-serif;
+$ff-mont-book: 'Mont-Book', sans-serif;
+$ff-mont-light: 'Mont-Light', sans-serif;
+$ff-nixie: 'Nixie One', cursive;
+$fz-link: 20px;
+$fz-title: 24px;
+$fz-content: 24px;
+$fz-section-title: 64px;
+$fz-placeholder: 15px;
+$fz-profession: 16px;
+$fz-card-title: 40px;
+$lh-all: 1.4;
+
+// Reset
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: $ff-mont-book;
+	font-size: $fz-content;
+    line-height: $lh-all;
+	color: $color-black;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: 1rem;
+	&.hide {
+		overflow: hidden;
+	}
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+	min-height: 100%;
+    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.crisper {
+    max-width: 1596px;
+	margin: 0 auto;
+	.section-title {
+		margin-bottom: 40px;
+		h2 {
+			font-family: $ff-mont-bold;
+			text-transform: uppercase;
+			font-size: 38px;
+		}
+	}
+	.section-separator {
+		margin-bottom: 40px;
+		width: max-content;
+		span {
+			display: flex;
+			position: relative;
+			z-index: 2;
+			width: 79px;
+			height: 5px;
+			background-color: $color-blue;
+			border-radius: 50px;
+			&:nth-of-type(1) {
+				margin-left: auto;
+				margin-right: 10px;
+				width: 44px;
+				background-color: $color-violet;
+				margin-bottom: 6px;
+			}
+			&:nth-of-type(2) {
+				margin-bottom: 5px;
+			}
+			&:nth-of-type(3) {
+				margin-left: 5px;
+				width: 19px;
+				background-color: $color-violet;
+			}
+		}
+	}
+	.section-body {
+		p {
+			font-size: 18px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.crisper {
+		.section-title {
+			h2 {
+				font-size: $fz-section-title;
+			}
+		}
+		.section-separator {
+			margin-bottom: 92px;
+			span {
+				&:nth-of-type(1) {
+					margin-bottom: 10px;
+				}
+				&:nth-of-type(2) {
+					margin-bottom: 9px;
+				}
+			}
+		}
+		.section-body {
+			p {
+				font-size: $fz-content;
+			}
+		}
+	}
+}
+
+@import "includes/header.scss";
+@import "page-blocks/**.scss";
+@import "includes/footer.scss";

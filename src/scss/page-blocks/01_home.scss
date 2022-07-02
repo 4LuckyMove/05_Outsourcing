@@ -1,0 +1,153 @@
+// Home
+.home {
+    position: relative;
+    max-height: 930px;
+    .swiper {
+        padding-top: 68px;
+        padding-bottom: 103px;
+        width: 100%;
+        height: 100%;
+        background: $color-black;
+        .parallax-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 130%;
+            height: 100%;
+            background-image: url('../img/home-img.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: brightness(0.5);
+        }
+        .swiper-wrapper {
+            .swiper-slide {
+                .crisper {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    .title {
+                        margin-bottom: 34px;
+                        h3 {
+                            color: $color-white;
+                            font-family: $ff-mont-heavy;
+                            max-width: 992px;
+                            font-size: $fz-content;
+                        }
+                    }
+                    .text {
+                        .slide-link {
+                            display: inline-block;
+                            color: $color-white;
+                            background-color: $color-blue;
+                            border: 1px solid $color-blue;
+                            font-family: $ff-mont-bold;
+                            line-height: 1;
+                            font-size: 14px;
+                            padding: 15px 15px;
+                            &:hover {
+                                transform: scale(.98)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 19px;
+                height: 5px;
+                border-radius: 50px;
+                background: $color-gray;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active {
+                width: 44px;
+                background: $color-white;
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .home {
+        .swiper {
+            padding-top: 88px;
+            padding-bottom: 143px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .crisper {
+                        .title {
+                            h3 {
+                                font-size: 30px;
+                            }
+                        }
+                        .text {
+                            .slide-link {
+                                font-size: 18px;
+                                padding: 20px 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .home {
+        .swiper {
+            padding-top: 167px;
+            padding-bottom: 203px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .crisper {
+                        .title {
+                            h3 {
+                                font-size: 40px;
+                            }
+                        }
+                        .text {
+                            .slide-link {
+                                font-size: $fz-content;
+                                padding: 25px 59px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .home {
+        .swiper {
+            padding-top: 180px;
+            padding-bottom: 255px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .crisper {
+                        .title {
+                            h3 {
+                                font-size: $fz-section-title;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1596px) {
+    .home {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .crisper {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

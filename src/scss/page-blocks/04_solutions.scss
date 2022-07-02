@@ -1,0 +1,166 @@
+// Solutions
+.solutions {
+    position: relative;
+    z-index: 2;
+    .crisper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        .section-separator {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-body {
+            .cards {
+                .card {
+                    padding-top: 63px;
+                    padding-bottom: 45px;
+                    padding-left: 41px;
+                    padding-right: 41px;
+                    background-color: $color-white;
+                    &:not(:last-child) {
+                        margin-bottom: 50px;
+                    }
+                    &:hover {
+                        box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+                    }
+                    .card-title {
+                        margin-bottom: 43px;
+                        max-height: 110px;
+                        img {
+                            max-width: 110px;
+                            max-height: 110px;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
+                    .card-body {
+                        .title {
+                            height: 76px;
+                            margin-bottom: 43px;
+                            h4 {
+                                text-transform: uppercase;
+                                font-family: $ff-mont-bold;
+                                font-size: 28px;
+                                letter-spacing: 1px;
+                            }
+                        }
+                        .description {
+                            max-height: 139px;
+                            margin-bottom: 43px;
+                            p {
+                                text-transform: uppercase;
+                            }
+                        }
+                        .link {
+                            max-height: 31px;
+                            .card-link {
+                                font-family: $ff-mont-bold;
+                                color: $color-blue;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: .15;
+        overflow: hidden;
+        img {
+            object-fit: contain;
+            object-position: center;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .solutions {
+        .crisper {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .section-body {
+                .cards {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 20px;
+                    row-gap: 50px;
+                    .card {
+                        &:not(:last-child) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .solutions {
+        .crisper {
+            padding-top: 109px;
+            padding-bottom: 104px;
+            .section-separator {
+                margin-bottom: 121px;
+            }
+            .section-body {
+                .cards {
+                    .card {
+                        .card-title {
+                            margin-bottom: 84px;
+                        }
+                        .card-body {
+                            .title {
+                                margin-bottom: 84px;
+                                h4 {
+                                    font-size: $fz-card-title;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .solutions {
+        .crisper {
+            .section-body {
+                .cards {
+                    grid-template-columns: repeat(3, 1fr);
+                    row-gap: 0;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1596px) {
+    .solutions {
+        .crisper {
+            padding-left: 0;
+            padding-right: 0;
+            .section-body {
+                .cards {
+                    column-gap: 100px;
+                }
+            }
+        }
+    }
+}
