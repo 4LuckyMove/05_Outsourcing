@@ -1669,8 +1669,8 @@ li {
 .case-studies .section-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   position: absolute;
   top: 0;
   left: 0;
@@ -2465,6 +2465,11 @@ li {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
     row-gap: 0;
+  }
+
+  .case-studies .section-cards {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .insights .crisper .section-body {

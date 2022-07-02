@@ -16,7 +16,7 @@
     }
     .section-cards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         position: absolute;
         top: 0;
         left: 0;
@@ -54,6 +54,13 @@
         }
         .section-cards {
             gap: 20px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .case-studies {
+        .section-cards {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
