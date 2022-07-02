@@ -1671,11 +1671,11 @@ li {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  gap: 10px;
+}
+
+.case-studies .section-cards > *:first-child {
+  display: none;
 }
 
 .case-studies .section-cards .card .card-bg {
@@ -2206,7 +2206,8 @@ li {
   }
 
   .case-studies .section-cards {
-    gap: 10px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .certifications {
@@ -2468,8 +2469,17 @@ li {
   }
 
   .case-studies .section-cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .case-studies .section-cards > *:first-child {
+    display: block;
   }
 
   .insights .crisper .section-body {

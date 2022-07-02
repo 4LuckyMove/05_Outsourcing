@@ -17,11 +17,10 @@
     .section-cards {
         display: grid;
         grid-template-columns: 1fr;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        gap: 10px;
+        & > *:first-child {
+            display: none;
+        }
         .card {
             .card-bg {
                 width: 100%;
@@ -43,7 +42,7 @@
             padding-bottom: 60px;
         }
         .section-cards {
-            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
@@ -60,6 +59,14 @@
 @media (min-width: 1200px) {
     .case-studies {
         .section-cards {
+            & > *:first-child {
+                display: block;
+            }
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             grid-template-columns: repeat(3, 1fr);
         }
     }
