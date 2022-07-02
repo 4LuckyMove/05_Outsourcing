@@ -1630,7 +1630,7 @@ li {
 }
 
 .no-webp .our-team .crisper .section-img .cards .card-1{
-  background-image: url(../../img/our-team-img-1.png); }
+  background-image: url(../img/our-team-img-1.png); }
 
 .our-team .crisper .section-img .cards .card-1 {
   background-position: center;
@@ -1639,7 +1639,7 @@ li {
 }
 
 .no-webp .our-team .crisper .section-img .cards .card-2{
-  background-image: url(../../img/our-team-img-2.png); }
+  background-image: url(../img/our-team-img-2.png); }
 
 .our-team .crisper .section-img .cards .card-2 {
   background-position: center;
@@ -2724,6 +2724,6 @@ li {
 
 .webp .home .swiper .parallax-bg{ background-image: url(../img/home-img.webp); }
 
-.webp .our-team .crisper .section-img .cards .card-1{ background-image: url(../../img/our-team-img-1.webp); }
+.webp .our-team .crisper .section-img .cards .card-1{ background-image: url(../img/our-team-img-1.webp); }
 
-.webp .our-team .crisper .section-img .cards .card-2{ background-image: url(../../img/our-team-img-2.webp); }
+.webp .our-team .crisper .section-img .cards .card-2{ background-image: url(../img/our-team-img-2.webp); }
